@@ -1,0 +1,35 @@
+.navbar {
+
+    margin: 20px;
+
+}
+
+.bg-light {
+    background-color: #6c757d !important;
+}
+
+.navbar-light .navbar-text {
+    color: white;
+
+
+}
+
+
+.col-6 {
+    text-align: center;
+}
+
+.form-check {
+    text-align: left;
+}
+
+.quizDescription {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.btn {
+    margin-top: 25px;
+
+}
