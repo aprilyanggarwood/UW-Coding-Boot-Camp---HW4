@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High Scores</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+  </head>
+  <body>
+    <!-- high scores page will have functions to get user's intial and high scores from local storage and diplay them on this page -->
+    <main class="container" id="startQuizPage">
+      <article class="row">
+        <div class="col"></div>
+        <div class="col-6">
+          <section id="quizContent">
+            <h1 id="finalScore">High Scores</h1>
+
+            <ul id="highScoresList"></ul>
+
+            <!-- link for going back to the first page of this quiz -->
+            <button><a class="btn" href="./index.html">Go Home</a></button>
+            <!-- will clear intials and high sores from local storage -->
+            <button class="clearHighscores">Clear High Scores</button>
+          </section>
+        </div>
+
+        <div class="col"></div>
+      </article>
+    </main>
+    <script src="./Assets/js/highscore.js"></script>
+  </body>
+</html>
