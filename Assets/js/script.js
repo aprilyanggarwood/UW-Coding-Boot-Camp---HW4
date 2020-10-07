@@ -49,7 +49,7 @@ saveSoreBtn.addEventListener("click", function (e) {
   var initial = document.getElementById("inputInitial").value.trim();
   highScores.push(`${initial} - ${score}`);
   localStorage.setItem("highscores", JSON.stringify(highScores));
-  location.replace("/highscores.html");
+  location.replace("./highscores.html");
 });
 
 // put 4 coding questions in an array
