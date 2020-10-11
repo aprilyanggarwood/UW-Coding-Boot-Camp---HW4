@@ -14,13 +14,15 @@ This homework practice is to create a timed code quiz application with multiple-
 
 - User can see a message shows up for 1 second on the next page of questions after each question is selected and submitted. This message will tell user his answer for the previous question is correct or wrong.
 
-- After user submitted the last question, this application will generate and show the score which how many questions got correct by user on the high score page, so user can see his quiz result and put his initial in the form, then click save button to store his score and inital to the local storage.
+- After user submitted the last question, this application will generate and show the current score in the final score input field which is indicated how many questions got correct by user,so user can see his quiz result and put his initial in the inital form, then click save button to store his score and inital to the local storage.
 
-- Each score is stored to and pulled from the local storage by JSON.stringify method and JSON.parse method. User can see his current score and previouse scores through the score list on the High Score page.
+  - Each intial and score are stored to and pulled from the local storage by JSON.stringify method and JSON.parse method.
 
-- The Clear High Score button on the high score page is gaven a function for clearing the hisctory of user's score list. The Go Home button is a link for user to go back the first page of the quiz.
+  - Each high score is generated after user is done the quiz will join to the high score list by function was designed. User can see his current score and previouse scores through the score list on the High Score page.
 
-- A High Score link is created on the upper left corner of the first page which invegate user to the high score page for reviewing his score history.
+- The Clear High Score button on the high score page is gaven a click event method for clearing the hisctory of user's high scores from local storage. The Go Home button is a link for user to go back the first page of the quiz.
+
+- A High Score link is created on the upper left corner of the first page which navigate user to the high score page for reviewing his score history.
 
 ## Summary of Javascript functions and methods are used for manipulating HTML files.
 

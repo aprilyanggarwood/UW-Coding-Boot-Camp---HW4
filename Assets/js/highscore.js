@@ -30,25 +30,29 @@
 //   .join("");
 
 // get data of high scores from local storage
-// user's initial and highsores will show up as list items in this high score page when user has his intial and score are stored to local storage
+
 let highScoresList = document.getElementById("highScoresList");
 var highScores = JSON.parse(localStorage.getItem("highscores")) || [];
-
-highScoresList.innerHTML = highScores.length
-  ? highScores
-      .map((score) => {
-        return `<li class="high-score">${score}</li>`;
-      })
-      .join("")
-  : "You don't have any highscores yet!";
-highScoresList.style.listStyle = "none";
-
-// let highScoreEl = document.querySelector(".clearHighscores");
-// function clearHighscore() {
-//   highScoreEl.addEventListener("click", function (e) {
-//     e.highscores.localStorage.clear(highScoresList);
-//   });
-// }
-// clearHighscore();
 //
-// });
+// function to get data of high scores from local storage
+// each high score is generated after user is done the quiz will join to the high score list by function was designed
+// user's initial and highsores will show up as list items in the high score page when user has his intial and score are stored to local storage
+function printHighScores() {
+  highScores = JSON.parse(localStorage.getItem("highscores")) || [];
+  highScoresList.innerHTML = highScores.length
+    ? // if then else short cut statement and map and join method are used for creating a high score list
+      highScores
+        .map((score) => {
+          return `<li class="high-score">${score}</li>`;
+        })
+        .join("")
+    : "You don't have any highscores yet!";
+  highScoresList.style.listStyle = "none";
+}
+printHighScores();
+
+let highScoreEl = document.querySelector(".clearHighscores");
+highScoreEl.addEventListener("click", function (e) {
+  localStorage.removeItem("highscores");
+  printHighScores();
+});
